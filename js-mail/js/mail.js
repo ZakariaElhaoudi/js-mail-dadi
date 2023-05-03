@@ -23,16 +23,15 @@ button.addEventListener('click',
             if (contEmail === emailUser) {  //controlla che sia nella lista di chi può accedere
                 accesoRisultato = "Acceso consentito ";  
                 trovato = true; // imposta a true
-                break;
             } 
-            if (trovato) {
-                accesoRisultato = "Acceso consentito ";  
-            } else {
-                accesoRisultato = "Acceso negativo ";  
-            }
-    
-   
         } 
+
+        if (trovato) {
+            accesoRisultato = "Acceso consentito ";  
+        } else {
+            accesoRisultato = "Acceso negativo ";  
+        }
+
         // crea output 
         console.log(accesoRisultato);
         container.innerHTML += `<div class="square">${accesoRisultato}</div>`;    
