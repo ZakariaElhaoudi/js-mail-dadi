@@ -27,7 +27,7 @@ button.addEventListener('click',
             vincitore = "Pareggio!!!"
             console.log("Pareggio!!!");
         }
-        container.innerHTML += `<div class="square">${vincitore}</div>`;   
+        container.innerHTML = `<div class="square">${vincitore}</div>`;   
     }
 )
      

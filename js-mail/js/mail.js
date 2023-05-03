@@ -34,7 +34,7 @@ button.addEventListener('click',
 
         // crea output 
         console.log(accesoRisultato);
-        container.innerHTML += `<div class="square">${accesoRisultato}</div>`;    
+        container.innerHTML = `<div class="square">${accesoRisultato}</div>`;    
     }
 )
  
